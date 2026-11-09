@@ -1,0 +1,12 @@
+url: https://github.com/baydeep/dsh-plugin-baydeep
+name: baydeep/dsh-plugin-baydeep
+category: tools
+description:
+  en: E-commerce plugin for DeepSeek Harness — live AliExpress affiliate search across 100M+ items, hot products, attributed s.click buy links and commission orders, via the BayDeep Streamable HTTP MCP server. Ships to 200+ countries. Zero signup: auto-mints a free key on install.
+  zh: 电商插件——一个 MCP 给你的 AI 加上速卖通（AliExpress）1.2 亿商品实时搜索、热销榜、带归因购买链接与佣金订单能力，发货覆盖 200+ 国家地区。零注册：安装即自动领取免费 key。
+# Registers the BayDeep MCP bridge component; it composes one
+# @deepseek-ai/dsh-mcp-client instance (Streamable HTTP) pointed at
+# https://mcp.baydeep.com/mcp with the auto-minted free API key.
+- insert:
+    - id: baydeep-mcp
+      name: './index.js'

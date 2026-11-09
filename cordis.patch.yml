@@ -1,0 +1,5 @@
+# Registers the BayDeep MCP bridge component (Streamable HTTP client composed
+# against https://mcp.baydeep.com/mcp with the auto-minted free API key).
+- insert:
+    - id: baydeep-mcp
+      name: './index.js'

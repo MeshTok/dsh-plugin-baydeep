@@ -1,0 +1,43 @@
+{
+  "name": "dsh-plugin-baydeep",
+  "description": "E-commerce plugin/MCP server for DeepSeek Harness (BayDeep) — live AliExpress affiliate search across 100M+ items, hot products, attributed buy links and commission orders. Ships to 200+ countries. NO signup: the plugin self-serves a free key automatically.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "icon": "./icon.svg",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baydeep/dsh-plugin-baydeep.git"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "mcp",
+    "mcp-server",
+    "e-commerce",
+    "ecommerce",
+    "shopping",
+    "shopping-agent",
+    "ai-shopping",
+    "aliexpress",
+    "affiliate",
+    "commerce",
+    "monetization",
+    "agent-tools",
+    "cross-border",
+    "global"
+  ],
+  "engines": {
+    "dsh": ">=0.2.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-mcp-client": ">=0.2.0-alpha.1 || >=0.2.0"
+  }
+}
